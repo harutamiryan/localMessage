@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="Header" customModule="LocalMessage" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="75"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4e-AT-3UX">
+                    <rect key="frame" x="281" y="25.5" width="80" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="0IS-pu-lpR"/>
+                        <constraint firstAttribute="width" constant="80" id="aE1-uH-HLd"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                    <state key="normal" title="Group"/>
+                    <connections>
+                        <action selector="groupButtonAction" destination="U6b-Vx-4bR" eventType="touchUpInside" id="6YY-Y9-4qX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="n4e-AT-3UX" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="E41-bv-9Ji"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="n4e-AT-3UX" secondAttribute="trailing" constant="16" id="fie-nl-0Rp"/>
+            </constraints>
+            <point key="canvasLocation" x="-10.869565217391305" y="132.25446428571428"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
