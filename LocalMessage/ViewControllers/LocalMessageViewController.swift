@@ -141,6 +141,7 @@ final class LocalMessageViewController: UIViewController, UICollectionViewDelega
     }
 }
 
+
 fileprivate class LMPanelLayout: UICollectionViewFlowLayout, UICollectionViewDelegateFlowLayout {
     private var layoutAttributes: [UICollectionViewLayoutAttributes] = []
     private var insertedItemsIndexPaths: Set<IndexPath> = []
